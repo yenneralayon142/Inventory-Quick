@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link ref="import" href="./eventos.html">
+        <style type="text/css">
+            body {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                background: #dadada;
+            }
+
+            body > * {
+                width: 100%;
+                border: 1px solid #000;
+                border-bottom-width: 0;
+                box-sizing: border-box;
+                text-align: center;
+            }
+
+            body > *:last-child {
+                border-bottom-width: 1px;
+
+            }
+            header{
+                background: #FFAAFF;
+            }
+
+            header,
+            footer {
+                min-height: 100px;
+            }
+
+            aside {
+                width: 25%;
+                border: 0 solid #000;
+                border-right-width: 1px;
+                background:#ff7f50;
+            }
+
+            .container .body {
+                width: 75%;
+            }
+            .body{
+                background: #ffffff;
+            }
+            .container {
+                display: flex;
+                min-height: 300px;
+            }
+            #foot{
+                background:#90ee90;
+            }
+            li{
+                list-style:none;
+            }
+            iframe{
+                margin:0; padding:0; height:100%;
+                display:block; width:100%; border:none; 
+            }
+        </style>
+        <script type="text/javascript">
+
+            function pintar(key) {
+
+                switch (key) {
+                    case 0:
+                        document.getElementById("muestra").innerHTML = '';
+                        break;
+                    case 1:
+                        document.getElementById("muestra").innerHTML = '<img src="unaImagen.jpg"/>';
+                        break;
+                    case 2:
+                        document.getElementById("muestra").innerHTML = '<img src="dosImagen.jpg"/>';
+
+                        break;
+                    case 3:
+                        document.getElementById("muestra").innerHTML = '<img src="tresImagen.jpg"/>';
+
+                        break;
+                    case 4:
+                        document.getElementById("muestra").innerHTML = "<iframe src='eventos.html'></iframe>";
+
+                        break;
+
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <header>Header</header>    
+            <div class="container">
+                <aside>
+                    <h5 onclick="pintar(0)">MENU</h5>
+                    <ol>
+                        <li onclick="pintar(1)">Clase Interfaces</li>
+                        <li onclick="pintar(2)">Clase Bases de Datos</li>
+                        <li onclick="pintar(3)">UML - Diagrama de Clases</li>
+                        <li onclick="pintar(4)">Eventos del mouse</li>
+                    </ol>
+                </aside>
+                <section id="muestra" class="body">Body</section>
+            </div>
+            <footer id="foot">Footer
+
+            </footer>
+        </div>
+    </body>
+</html>
