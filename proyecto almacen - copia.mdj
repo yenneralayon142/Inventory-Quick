@@ -235,7 +235,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -320,
-											"top": -64,
+											"top": -48,
 											"height": 13
 										},
 										{
@@ -246,7 +246,7 @@
 											},
 											"font": "Arial;13;1",
 											"left": 85,
-											"top": 7,
+											"top": 15,
 											"width": 1247,
 											"height": 13,
 											"text": "System"
@@ -260,7 +260,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -320,
-											"top": -64,
+											"top": -48,
 											"width": 73.67724609375,
 											"height": 13,
 											"text": "(from Model)"
@@ -274,13 +274,14 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -320,
-											"top": -64,
+											"top": -48,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 80,
+									"top": 8,
 									"width": 1257,
 									"height": 25,
 									"stereotypeLabel": {
@@ -299,6 +300,7 @@
 							],
 							"font": "Arial;13;0",
 							"left": 80,
+							"top": 8,
 							"width": 1257,
 							"height": 649,
 							"nameCompartment": {
